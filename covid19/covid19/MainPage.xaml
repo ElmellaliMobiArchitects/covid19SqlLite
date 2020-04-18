@@ -1,16 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="covid19.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+<ContentPage
+    x:Class="covid19.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+        <Entry x:Name="txtText" Placeholder="Write some text..." />
+        <Button x:Name="btnWrite" Text="Write" />
+        <Button x:Name="btnRead" Text="Read" />
+        <Label
+            x:Name="lblFileTexts"
+            HorizontalTextAlignment="Center"
+            LineBreakMode="WordWrap"
+            Text="File Values:" />
     </StackLayout>
-
 </ContentPage>
